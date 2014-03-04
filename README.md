@@ -4,7 +4,8 @@ Available under "Wakanda Studio V8 " , circles widget is a nice looking widget.t
 ### Circles Widgets Examples:
 
 ![Circles](http://lugolabs.com/static/circles.png)
-
+![CirclesWakanda](https://raw.github.com/elaissoussi/Image/master/im.png)
+https://raw.github.com/elaissoussi/Image/master/im.png
 ### Properties
 ```js
 value      : widget.property({type:'number', defaultValue: 0})
