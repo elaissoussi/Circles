@@ -1,7 +1,6 @@
 ## Custom Widget for [Wakanda](http://wakanda.org)
 
-Created under "Wakanda Studio" . Circles widget is a nice looking widget. 
-
+Available under "Wakanda Studio V8 " , circles widget is a nice looking widget.that may be helpful for many purposes, all what you need is  just to include it under "Wakanda Custom Widget". 
 ### Circles Widgets Examples:
 
 ![Circles](http://lugolabs.com/static/circles.png)
