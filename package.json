@@ -1,0 +1,27 @@
+{
+    "name": "Circles",
+    "studioName": "Circles",
+    "category": "Custom Widgets",
+    "iconPath": "/icons/widget.png",
+    "author": "Widget Developer",
+    "contributors": [
+        "EL AISSOUSSI Monsif",
+        "AIT ZIAD Abderrazak"
+    ],
+    "version": "1.0.0",
+    "copyright": "(c) 2014 Widget Developer",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/elaissoussi/CirclesWidget.git"
+    },
+    "keywords": ["wakanda", "widget"],
+    "engines": {"wakanda": ">= 8"},
+    "license": "MIT",
+    "loadDependencies": [
+        {"id": "Widget_V2"},
+		{"id": "Circles/plugin/circles.js", "version": "1.0.0", "path": "WIDGETS_CUSTOM"},  
+        {"id": "Circles/widget.js", "version": "1.0.0", "path": "WIDGETS_CUSTOM"},
+        {"id": "Circles/css/widget.css", "version": "1.0.0", "path": "WIDGETS_CUSTOM"},
+        {"id": "Circles/designer.js", "studioOnly": true, "version": "1.0.0", "path": "WIDGETS_CUSTOM"}
+    ]
+}
