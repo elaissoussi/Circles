@@ -8,27 +8,26 @@ Created under "Wakanda Studio" . Circles widget is a nice looking widget.
 
 ### Properties
 ```js
-Circles.create({
-	id:         'circles-id',
-	percentage: 43,
-	radius:     50,
-	width:      10,
-	number:     7.13,
-	text:       '%',
-	colors:     ['#D3B6C6', '#4B253A'],
-	duration: 	400
-})
+value      : widget.property({type:'number', defaultValue: 0})
+radius     : widget.property({type:'number', defaultValue: 50})
+max        : widget.property({type:'number', defaultValue: 100})
+text       : widget.property({type:'string', defaultValue: '%'})
+borderWidth: widget.property({type: 'integer', defaultValue: 10})
+animationDuration: widget.property({type: 'integer', defaultValue: 400})
+primaryColor  : widget.property({type:'string', defaultValue: '#D3B6C6'})
+secondaryColor: widget.property({type:'string', defaultValue: '#4B253A'})
+
 ```
 
 where
 
-* `id` 					- the DOM element that will hold the graph
-* `percentage` 	- the percentage dictating the smaller circle
+
+* `value` 	- the percentage dictating the smaller circle
 * `radius` 			- the radius of the circles
-* `width` 			- the width of the ring (optional, has value 10, if not specified)
-* `number`			- the number to display at the centre of the graph (optional, the percentage will show if not specified)
-* `text` 				- the text to display after the number (optional, nothing will show if not specified)
-* `colors` 			- an array of colors, with the first item coloring the full circle (optional, it will be `['#EEE', '#F00']` if not specified)
+* `borderWidth` 			- the width of the ring ()
+* `max`			- the maximum value of the circle percentage to display. 
+* `text` 				- the text to display after the number  specified)
+* `[primaryColor,secondaryColor ]` - an array of colors, with the first item coloring the full circle and second color  the clicked part. 
 * `duration` 		- value in ms of animation's duration; defaults to 500; if `null` is passed, the animation will not run.
 
 
