@@ -12,7 +12,6 @@ value      : widget.property({type:'number', defaultValue: 0})
 radius     : widget.property({type:'number', defaultValue: 50})
 max        : widget.property({type:'number', defaultValue: 100})
 text       : widget.property({type:'string', defaultValue: '%'})
-borderWidth: widget.property({type: 'integer', defaultValue: 10})
 animationDuration: widget.property({type: 'integer', defaultValue: 400})
 primaryColor  : widget.property({type:'string', defaultValue: '#D3B6C6'})
 secondaryColor: widget.property({type:'string', defaultValue: '#4B253A'})
@@ -24,7 +23,6 @@ where
 
 * `value` 	- the percentage dictating the smaller circle
 * `radius` 			- the radius of the circles
-* `borderWidth` 			- the width of the ring ()
 * `max`			- the maximum value of the circle percentage to display. 
 * `text` 				- the text to display after the number  specified)
 * `[primaryColor,secondaryColor ]` - an array of colors, with the first item coloring the full circle and second color  the clicked part. 
