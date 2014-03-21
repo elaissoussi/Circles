@@ -9,7 +9,6 @@ Available under "Wakanda Studio V8 " , circles widget is a nice looking widget.t
 ### Properties
 ```js
 value      : widget.property({type:'number', defaultValue: 0})
-radius     : widget.property({type:'number', defaultValue: 50})
 max        : widget.property({type:'number', defaultValue: 100})
 text       : widget.property({type:'string', defaultValue: '%'})
 animationDuration: widget.property({type: 'integer', defaultValue: 400})
@@ -22,7 +21,6 @@ where
 
 
 * `value` 	- the percentage dictating the smaller circle
-* `radius` 			- the radius of the circles
 * `max`			- the maximum value of the circle percentage to display. 
 * `text` 				- the text to display after the number  specified)
 * `[primaryColor,secondaryColor ]` - an array of colors, with the first item coloring the full circle and second color  the clicked part. 
