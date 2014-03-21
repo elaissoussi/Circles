@@ -4,7 +4,6 @@ WAF.define('Circles', ['waf-core/widget'], function(widget) {
         
         /*properties  */
         value: widget.property({type:'number', defaultValue: 0}),
-        radius: widget.property({type:'number', defaultValue: 50}),
         max: widget.property({type:'number', defaultValue: 100}),
         animationDuration: widget.property({type: 'integer', defaultValue: 400}),
         primaryColor: widget.property({type:'string', defaultValue: '#D3B6C6'}),
@@ -20,7 +19,6 @@ WAF.define('Circles', ['waf-core/widget'], function(widget) {
             
             /*onChange some properties*/
             this.value.onChange(this.render);
-            this.radius.onChange(this.render);
             this.primaryColor.onChange(this.render);
             this.secondaryColor.onChange(this.render);
              
@@ -86,7 +84,6 @@ WAF.define('Circles', ['waf-core/widget'], function(widget) {
             Circles.create({
                 id: this.node.id,
                 percentage: this.value() / this.max() * 100,
-                radius: this.radius(),
                 number: this.value(),
                 text  : this.text(),
                 colors: [this.primaryColor(), this.secondaryColor()],
